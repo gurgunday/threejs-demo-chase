@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Endless Hunt</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script type="module" src="./src/app.js"></script>
+  </head>
+  <body style="margin: 0">
+    <div id="mobile-warning">
+      This experience is only available on widescreen displays.
+    </div>
+    <div id="container"></div>
+    <script>
+      const mobileWarning = document.getElementById("mobile-warning");
+      const appContainer = document.getElementById("container");
+
+      if (window.innerWidth < 550 || window.innerHeight < 565) {
+        document.getElementById("container").remove();
+        throw new Error(mobileWarning.innerText);
+      }
+
+      mobileWarning.remove();
+      appContainer.style.display = "flex";
+    </script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Cute mouse
+* source:	https://sketchfab.com/3d-models/cute-mouse-cf391c60a17a419e9ea5049952520303
+* author:	yanxuann (https://sketchfab.com/yanxuann)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Cute mouse" (https://sketchfab.com/3d-models/cute-mouse-cf391c60a17a419e9ea5049952520303) by yanxuann (https://sketchfab.com/yanxuann) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
