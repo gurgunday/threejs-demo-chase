@@ -137,7 +137,9 @@ const isPlayerOutOfBounds = function () {
   );
 };
 
-// Animation loop
+// Animation & game loop
+let gameOver = false;
+
 const animate = function () {
   const speed = 0.15;
   const rotationSpeed = 0.05;
@@ -199,7 +201,8 @@ const animate = function () {
   cat.position.add(direction.multiplyScalar(chaseSpeed));
 
   // Check for collision and refresh the page
-  if (distance < 1) {
+  if (distance < 1 && !gameOver) {
+    gameOver = true;
     location.reload();
   }
 
@@ -218,7 +221,8 @@ const animate = function () {
   if (isPlayerOutOfBounds()) {
     mouse.position.y -= 0.1;
 
-    if (mouse.position.y < -10) {
+    if (mouse.position.y < -10 && !gameOver) {
+      gameOver = true;
       location.reload();
     }
   } else {
